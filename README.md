@@ -6,3 +6,6 @@ Los usuarios podrán registarse y añadir nuevos artículos a la tienda, guardar
 ## Herramientas
 
 He elegido el lenguaje de programación 'JavaScript'
+
+#Configuración de git
+
