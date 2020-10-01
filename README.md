@@ -7,5 +7,6 @@ Los usuarios podrán registarse y añadir nuevos artículos a la tienda, guardar
 
 He elegido el lenguaje de programación 'JavaScript'
 
-#Configuración de git
+# Configuración de git
 
+[Git](https://github.com/miguelfdez99/MyOutlet/blob/master/config/config.md)
