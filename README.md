@@ -5,7 +5,11 @@ Los usuarios podrán registarse y añadir nuevos artículos a la tienda, guardar
 
 ## Herramientas
 
-He elegido el lenguaje de programación 'JavaScript'
+- Leanguaje: [JavaScript](https://www.javascript.com/)
+- Entorno: [NodeJS](https://nodejs.org/en/)
+- Web framework: [Express.js](http://expressjs.com/)
+- Base de datos: [MongoDB](https://www.mongodb.com/)
+- Sistema de logs [Winston](https://github.com/winstonjs/winston)
 
 # Configuración de git
 
