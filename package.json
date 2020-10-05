@@ -16,7 +16,5 @@
     "url": "https://github.com/miguelfdez99/MyOutlet/issues"
   },
   "homepage": "https://github.com/miguelfdez99/MyOutlet#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "dependencies": {}
 }
