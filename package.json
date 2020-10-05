@@ -1,0 +1,22 @@
+{
+  "name": "myoutlet",
+  "version": "1.0.0",
+  "description": "Outlet de una tienda deportiva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelfdez99/MyOutlet.git"
+  },
+  "author": "miguelfdez99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelfdez99/MyOutlet/issues"
+  },
+  "homepage": "https://github.com/miguelfdez99/MyOutlet#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
