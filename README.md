@@ -1,16 +1,17 @@
 # MyOutlet
-El proyecto consistirá en un outlet de ropa de deportiva en la que también las usuarios podrán vender y comprar ropa de segunda mano. 
-Los usuarios podrán registarse y añadir nuevos artículos a la tienda, guardar sus favoritos , etc.
+El proyecto consistirá en un outlet de ropa de deportiva en la que los usuarios podrán vender y comprar sus prendas favoritas.
+Los usuarios podrán ver información de una prenda determinada, crear , eliminar o actualizar alguna de las suyas.
 
+Cada prenda de ropa tendrá la siguiente información:
 
-## Herramientas
+- Talla
+- Marca
+- Color
+- Precio 
+- Descuento
+- Colección
 
-- Leanguaje: [JavaScript](https://www.javascript.com/)
-- Entorno: [NodeJS](https://nodejs.org/en/)
-- Web framework: [Express.js](http://expressjs.com/)
-- Base de datos: [MongoDB](https://www.mongodb.com/)
-- Sistema de logs [Winston](https://github.com/winstonjs/winston)
+## Documentación
 
-# Configuración de git
-
-[Git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
+- Herramientas: [Herramientas](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/tools.md)
+- Configuración de git: [Git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
