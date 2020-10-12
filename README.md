@@ -13,4 +13,4 @@ Los usuarios podrán registarse y añadir nuevos artículos a la tienda, guardar
 
 # Configuración de git
 
-[Git](https://github.com/miguelfdez99/MyOutlet/blob/master/config/config.md)
+[Git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
