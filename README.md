@@ -12,6 +12,6 @@ Cada prenda de ropa tendrá la siguiente información:
 - Colección
 
 ## Documentación
-
-- Herramientas: [Herramientas](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/tools.md)
+- ¿Por qué este proyecto? [Info](https://miguelfdez99.github.io/MyOutlet/info)
+- Herramientas: [Herramientas](https://miguelfdez99.github.io/MyOutlet/tools)
 - Configuración de git: [Git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
