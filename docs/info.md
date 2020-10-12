@@ -1,4 +1,4 @@
-# Why did I chose this project?
+# Why did I choose this project?
 
 I've chosen a project that I think I can carry out eventually. The theme that I`ve chosen really attracts me, so it's going to be easier to work with.
 The idea it's to create a web app that allow people to interact with sport clothes. Anyone can upload an item of clothing to sell it, considering that it suitable for the web.
