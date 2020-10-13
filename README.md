@@ -1,5 +1,5 @@
 # MyOutlet
-El proyecto consistirá en un outlet de ropa de deportiva en la que los usuarios podrán vender y comprar sus prendas favoritas.
+El proyecto consistirá en un microservicio de gestión de un outlet de ropa de deportiva en la que los usuarios podrán vender y comprar sus prendas favoritas.
 Los usuarios podrán ver información de una prenda determinada, crear , eliminar o actualizar alguna de las suyas.
 
 ### Funcionalidades principales:
