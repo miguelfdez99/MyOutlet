@@ -4,17 +4,12 @@ I've chosen a project that I think I can carry out eventually. The theme that I`
 The idea it's to create a web app that allow people to interact with sport clothes. Anyone can upload an item of clothing to sell it, considering that it suitable for the web.
 
 
-## Project Information
+## Main functionalities
 
-
-Each item will have the next information:
-
-- Size
-- Brand
-- Color
-- Price
-- Discount
-- Season
+- Add a new item
+- Delete an intem
+- Update an item
+- Look up for information on a certain item.
 
 
 ## Why JavaScript?
