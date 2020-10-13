@@ -13,6 +13,7 @@ Los usuarios podrán ver información de una prenda determinada, crear , elimina
 - [¿Por qué este proyecto?](https://miguelfdez99.github.io/MyOutlet/info)
 - [Herramientas](https://miguelfdez99.github.io/MyOutlet/tools)
 - [Configuración de git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
+- [Pasos seguidos](https://miguelfdez99.github.io/MyOutlet/pasos)
 
 ## Enlaces
 
