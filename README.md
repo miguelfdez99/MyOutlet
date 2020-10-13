@@ -2,19 +2,17 @@
 El proyecto consistirá en un outlet de ropa de deportiva en la que los usuarios podrán vender y comprar sus prendas favoritas.
 Los usuarios podrán ver información de una prenda determinada, crear , eliminar o actualizar alguna de las suyas.
 
-Cada prenda de ropa tendrá la siguiente información:
+### Funcionalidades principales:
+  - Añadir una nueva prenda que cumpla con los requisitos.
+  - Consultar información acerca de una prenda determinada.
+  - Eliminar una prenda.
+  - Modificar la información acerca de una prenda.
 
-- Talla
-- Marca
-- Color
-- Precio 
-- Descuento
-- Colección
 
 ## Documentación
-- ¿Por qué este proyecto? [Info](https://miguelfdez99.github.io/MyOutlet/info)
-- Herramientas: [Herramientas](https://miguelfdez99.github.io/MyOutlet/tools)
-- Configuración de git: [Git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
+- [¿Por qué este proyecto?](https://miguelfdez99.github.io/MyOutlet/info)
+- [Herramientas](https://miguelfdez99.github.io/MyOutlet/tools)
+- [Configuración de git](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/config.md)
 
 ## Enlaces
 
