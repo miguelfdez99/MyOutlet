@@ -1,1 +1,6 @@
 entidad: src/myoutlet.js
+lenguaje: JavaScript
+test:
+  - test/item.test.js
+  - test/myoutlet.test.js
+taskfile: package.json
