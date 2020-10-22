@@ -2,9 +2,9 @@
   "name": "myoutlet",
   "version": "1.0.0",
   "description": "Outlet de una tienda deportiva",
-  "main": "index.js",
+  "main": "src/myoutlet.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
