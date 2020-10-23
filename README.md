@@ -31,8 +31,8 @@ $ npm test
 ## Enlaces
 
 - [Issues Cerrados](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aissue+is%3Aclosed)
-  - [H1](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aclosed+milestone%3A%22Hito+1%22)
-  - [H2](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aclosed+milestone%3A%22Hito+2%22)
+  - [H1](https://github.com/miguelfdez99/MyOutlet/milestone/1?closed=1)
+  - [H2](https://github.com/miguelfdez99/MyOutlet/milestone/2?closed=1)
 - [Historias de usuario](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aopen+is%3Aissue+label%3Auser-stories)
 - [Milestones](https://github.com/miguelfdez99/MyOutlet/milestones)
 
