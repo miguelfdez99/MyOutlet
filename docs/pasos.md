@@ -22,7 +22,7 @@
 - Buscar información sobre test frameworks y task managers
 - Avance de código, añadidos las funciones deseadas de momento. [Issue](https://github.com/miguelfdez99/MyOutlet/issues/8)
 - Instalar Mocha y Chai, [Issue](https://github.com/miguelfdez99/MyOutlet/issues/11)
-- Creacion de los [test](https://github.com/miguelfdez99/MyOutlet/tree/master/test) [Issue](https://github.com/miguelfdez99/MyOutlet/issues/12)
-- Actualización de [iv.yaml](https://github.com/miguelfdez99/MyOutlet/blob/master/iv.yaml)[Issue](https://github.com/miguelfdez99/MyOutlet/issues/13)
-- Añadir documentación [npm](https://miguelfdez99.github.io/MyOutlet/tools) [Mocha y Chai](https://miguelfdez99.github.io/MyOutlet/mocha_chai)
-- Actualizar [README.ME](https://github.com/miguelfdez99/MyOutlet/blob/master/README.md)
+- Creacion de los [test](https://github.com/miguelfdez99/MyOutlet/tree/master/test), [Issue](https://github.com/miguelfdez99/MyOutlet/issues/12)
+- Actualización de [iv.yaml](https://github.com/miguelfdez99/MyOutlet/blob/master/iv.yaml), [Issue](https://github.com/miguelfdez99/MyOutlet/issues/13)
+- Añadir documentación [npm](https://miguelfdez99.github.io/MyOutlet/tools), [Mocha y Chai](https://miguelfdez99.github.io/MyOutlet/mocha_chai)
+- Actualizar [README.ME](https://github.com/miguelfdez99/MyOutlet/blob/master/README.md), [Issue](https://github.com/miguelfdez99/MyOutlet/issues/14)
