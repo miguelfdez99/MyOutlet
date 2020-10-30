@@ -7,6 +7,7 @@ var store = new MyOutlet();
 var nItem = new Item("HOODIE", "S", "KAPPA", "WHITE", 30, "FALL_WINTER");
 var nItem1 = new Item("T-SHIRT", "M", "ADIDAS", "BLACK", 25, "SPRING_SUMMER");
 var nItem2 = new Item("JEANS", "XL", "FILA", "BLUE", 50, "FALL_WINTER");
+const types = ["HOODIE", "T-SHIRT", "JEANS", "JOGGERS", "JACKET", "SHOES", "TROUSERS", "SHIRTS"];
 store.addItem(nItem1);
 store.addItem(nItem2);
 
@@ -27,6 +28,30 @@ describe("Testing deleteItem", function() {
 describe("Testing getItem" , function() {
   it("should get an item", function(){
     let i = store.getItem();
-    assert.equal(i[0],nItem1)
+    assert.equal(i[0],nItem1);
+  })
+});
+
+describe("Testing showItems", function(){
+  it("should return info about every item" , function(){
+    var i = store.showItems().length;
+    var j = store.items.length;
+    assert.equal(i,j);
+  })
+});
+
+describe("Testing showType", function(){
+  it("should return every item's type existing in the store" , function(){
+    var i = store.showType().length;
+    var j = store.items.length;
+    assert.equal(i,j);
+  })
+});
+
+describe("Testing showBrand", function(){
+  it("should return every item's brand existing in the store" , function(){
+    var i = store.showBrand().length;
+    var j = store.items.length;
+    assert.equal(i,j);
   })
 });
