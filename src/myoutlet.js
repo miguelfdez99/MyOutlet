@@ -44,6 +44,24 @@ showItems(){
     return _items;
   }
 
+  //Method to show every type existing in the store
+  showType(){
+    var _type = new Array();
+    for(var i in this.items){
+      _type.push(this.items[i].getType() + "\n");
+    }
+    return _type;
+  }
+
+  //Method to show every size existing in the store
+  showBrand(){
+    var _brand = new Array();
+    for(var i in this.items){
+      _brand.push(this.items[i].getBrand() + "\n");
+    }
+    return _brand;
+    }
+
 
 }
 
