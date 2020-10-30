@@ -7,7 +7,6 @@ class MyOutlet{
   }
 
   //Method to add a new item to the store
-
   addItem(item) {
     var exists = false;
     this.items.forEach(element => {
@@ -28,7 +27,6 @@ class MyOutlet{
 
 
   //Method to delate an item of the store
-
   deleteItem(item) {
     if(this.items.length > 0){
       this.items.pop(item);
@@ -36,6 +34,16 @@ class MyOutlet{
       throw new Error("There is not items in the store");
     }
   }
+
+//Method to show every item
+showItems(){
+    var _items = new Array();
+    for(var i in this.items){
+      _items.push(this.items[i].checkItem() + "\n");
+    }
+    return _items;
+  }
+
 
 }
 
