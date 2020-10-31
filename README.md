@@ -20,6 +20,11 @@ Para lanzar los tests hay que ejecutar:
 $ npm test
 ~~~
 
+##Docker
+- [Github Container Regestry](https://github.com/users/miguelfdez99/packages/container/package/myoutlet)
+
+
+
 ## Documentación
 - [¿Por qué este proyecto?](https://miguelfdez99.github.io/MyOutlet/info)
 - [Mocha & Chai](https://miguelfdez99.github.io/MyOutlet/mocha_chai)
