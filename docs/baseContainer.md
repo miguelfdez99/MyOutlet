@@ -11,6 +11,7 @@ node 12.19.0 I had to install one of the images that matches my version.
   - node:<version>-alpine:
   This image is based on the popular Alpine Linux project, Alpine is lighter than most of the images. This version is better when you want to image to be as small
   as possible, it is also one of the safest options.This image is the most highly recommended if space is a concern.
+  [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux) is a Linux distribution based on musl and BusyBox, designed for security, simplicity, and resource efficiency.It used a hardened kernel until      release 3.8 and compiles all user-space binaries as position-independent executables with stack-smashing protection.
   
   - node:<version>-slim: 
   This image uses the minimal packages needed in order to function correctly. It is better than node:<version> in most of the cases.
@@ -39,5 +40,4 @@ node 12.19.0 I had to install one of the images that matches my version.
  
  ## Final choice
  
- Taking everything into account, I think node:12.19.0-alpine3.11 is the best option. Why? Is the smallest and the fastest, so it is enough to be slightly 
- better than the others.
+Taking everything into account, I think node:12.19.0-alpine3.11 is the best option. Why? It is the smallest in size and it performs the best when it comes to testing, so it is enough to be slightly better than the others. Moreover, my project doesn't need that much dependencies which is a good environment for alpine to work properly.
