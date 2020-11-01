@@ -31,7 +31,7 @@ node 12.19.0 I had to install one of the images that matches my version.
  
  - node:12.19.0: 7,3s
  
- ![](img/node_png)
+ ![](img/node_.png)
  
  - node:12.19.0-stretch-slim: 4,61s
  
