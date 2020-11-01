@@ -4,19 +4,26 @@ First of all, I had to look in Docker Hub documentation about [node](https://hub
 node 12.19.0 I had to install one of the images that matches my version.
 
 - Versions
-
-  - node:<version>: 
+~~~
+  - node:<version>
+~~~
   This is the defacto image. It is designed to be used both as a throw away container, as well as the base to build other images off of.
 
-  - node:<version>-alpine:
+~~~
+  - node:<version>-alpine
+  ~~~
   This image is based on the popular Alpine Linux project, Alpine is lighter than most of the images. This version is better when you want to image to be as small
   as possible, it is also one of the safest options.This image is the most highly recommended if space is a concern.
   [Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux) is a Linux distribution based on musl and BusyBox, designed for security, simplicity, and resource efficiency.It used a hardened kernel until      release 3.8 and compiles all user-space binaries as position-independent executables with stack-smashing protection.
   
-  - node:<version>-slim: 
+ ~~~
+  - node:<version>-slim
+ ~~~
   This image uses the minimal packages needed in order to function correctly. It is better than node:<version> in most of the cases.
   
-  - node:<version>-buster:
+  ~~~
+  - node:<version>-buster
+  ~~~
   It is a Debian base image for Debian 10.4 stable releases. In version 9 instead of buster they use the name stretch.
   
   
