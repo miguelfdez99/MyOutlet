@@ -20,9 +20,23 @@ Para lanzar los tests hay que ejecutar:
 $ npm test
 ~~~
 
-##Docker
-- [Github Container Regestry](https://github.com/users/miguelfdez99/packages/container/package/myoutlet)
-
+## Docker
+- Para ejecutar los test a partir de los contenedores debemos de ejecutar los siguientes comandos.
+  - Desde DockerHub
+  ~~~
+  $ docker pull miguelfdez99/myoutlet
+  $ docker run -t -v `pwd`:/test /miguelfdez99/myoutlet
+  ~~~
+  - Desde GitHub Container Registry
+  ~~~
+  $ docker pull ghcr.io/miguelfdez99/myoutlest:latest
+  $ docker run -t -v `pwd`:/test /miguelfdez99/myoutlet
+  ~~~
+- Justificación del [contenedor base](https://miguelfdez99.github.io/MyOutlet/baseContainer)
+- [Buenas prácticas](https://miguelfdez99.github.io/MyOutlet/dockerfile) para el [Dockerfile](https://github.com/miguelfdez99/MyOutlet/blob/master/Dockerfile)
+- [DockerHub](https://hub.docker.com/r/miguelfdez99/myoutlet) y [pasos seguidos](https://miguelfdez99.github.io/MyOutlet/dockerhub)
+- [Github Container Regestry](https://github.com/users/miguelfdez99/packages/container/package/myoutlet) y su [documentación](https://miguelfdez99.github.io/MyOutlet/ghcr)
+- [Optimización](https://miguelfdez99.github.io/MyOutlet/opt)
 
 
 ## Documentación
