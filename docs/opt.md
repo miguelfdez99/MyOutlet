@@ -10,13 +10,23 @@ information and data. We can achieve this with things like:
     ~~~
     $ RUN npm install &&  rm -rf /var/lib/apt/lists/*
     ~~~
+    
+    instead of 
+    
+   ~~~
+   RUN npm install
+   RUN rm -rf /var/lib/apt/lists/*
+   ~~~
 - Remove package manager cache
-- Order matters. Previously I had
-~~~
-COPY package*.json ./
-~~~
-before
+- Order matters. Previously I had the command 
 ~~~
 RUN npm install
 ~~~
-instead of after it.
+before
+~~~
+COPY package*.json ./
+~~~
+instead of after it, which led me to an error.
+
+The image I am using is has a size of 102MB, before the optimitazion it was around 135MB.
+It has also improved time of execution but not too much to make a difference, about 0,2s.
