@@ -11,15 +11,12 @@ information and data. We can achieve this with things like:
     $ RUN npm install &&  rm -rf /var/lib/apt/lists/*
     ~~~
 - Remove package manager cache
-- Order matters. Previously I had 
+- Order matters. Previously I had
 ~~~
-COPY package*.json ./ 
+COPY package*.json ./
 ~~~
-before 
+before
 ~~~
 RUN npm install
 ~~~
-isntead of after it.
-
-
-  
+instead of after it.
