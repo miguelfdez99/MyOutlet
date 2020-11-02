@@ -27,3 +27,5 @@ $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 ~~~
 $ docker push ghcr.io/OWNER/IMAGE_NAME:VERSION
 ~~~
+
+[Package](https://github.com/users/miguelfdez99/packages/container/package/myoutlet)
