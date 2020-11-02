@@ -5,20 +5,17 @@ LABEL maintainer="Miguel Ángel Fernández Torralbo"
 #Crear un nuevo usuario
 RUN adduser -S miguel
 
+#Instalar dependencias y borrar caché
+RUN npm install &&  rm -rf /var/lib/apt/lists/*
+
 #Copiamos los ficheros de dependencias
 COPY package*.json ./
 
-#Instalar dependencias
-RUN npm install
-
-#Borramos archivos irrelevantes
-RUN rm -rf /var/lib/apt/lists/*
+#Cambiamos de usuario
+USER miguel
 
 #Para que encuentre las dependencias
 ENV PATH=/node_modules/.bin:$PATH
-
-#Cambiamos de usuario
-USER miguel
 
 #Cambiamos de directorio
 VOLUME /test
