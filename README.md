@@ -30,9 +30,8 @@ $ npm test
   - Desde GitHub Container Registry
   ~~~
   $ docker pull ghcr.io/miguelfdez99/myoutlest:latest
-  $ docker run -t -v `pwd`:/test /miguelfdez99/myoutlet
   ~~~
-- Justificación del [contenedor base](https://miguelfdez99.github.io/MyOutlet/baseContainer)
+- Justificación del [contenedor base](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/baseContainer.md)
 - [Buenas prácticas](https://miguelfdez99.github.io/MyOutlet/dockerfile) para el [Dockerfile](https://github.com/miguelfdez99/MyOutlet/blob/master/Dockerfile)
 - [DockerHub](https://hub.docker.com/r/miguelfdez99/myoutlet) y [pasos seguidos](https://miguelfdez99.github.io/MyOutlet/dockerhub)
 - [Github Container Regestry](https://github.com/users/miguelfdez99/packages/container/package/myoutlet) y su [documentación](https://miguelfdez99.github.io/MyOutlet/ghcr)
