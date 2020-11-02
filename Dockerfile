@@ -5,11 +5,11 @@ LABEL maintainer="Miguel Ángel Fernández Torralbo"
 #Crear un nuevo usuario
 RUN adduser -S miguel
 
-#Instalar dependencias y borrar la caché
-RUN npm install &&  rm -rf /var/lib/apt/lists/*
-
 #Copiamos los ficheros de dependencias
 COPY package*.json ./
+
+#Instalar dependencias y borrar la caché
+RUN npm install &&  rm -rf /var/lib/apt/lists/*
 
 #Cambiamos de usuario
 USER miguel
