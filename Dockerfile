@@ -8,14 +8,8 @@ RUN adduser -S miguel
 #Copiamos los ficheros de dependencias
 COPY package*.json ./
 
-#Usuario sin privilegios para instalar npm
-USER miguel
-
 #Instalar dependencias y borrar la caché
 RUN npm install &&  rm -rf /var/lib/apt/lists/*
-
-#Usuario root para eliminar las dependencias
-USER root
 
 #Borramos ficheros de dependencias
 RUN rm package*.json
