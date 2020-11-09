@@ -9,7 +9,7 @@ RUN adduser -S miguel
 COPY package*.json ./
 
 #Instalar dependencias y borrar la caché y ficheros de dependencies
-RUN npm install &&  rm -rf /var/lib/apt/lists/* && \
+RUN npm install &&  rm -rf /var/lib/apt/lists/*  \
 && rm package*.json
 
 #Cambiamos de usuario
