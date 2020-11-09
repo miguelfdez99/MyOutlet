@@ -6,7 +6,8 @@ var newItem = new Item("HOODIE", "S", "KAPPA", "WHITE", 30, "FALL_WINTER");
 var newItem1 = new Item("HOODIE", "M", "KAPPA", "BLACK", 25, "FALL_WINTER");
 var rev = "Pretty comfortable hoodie";
 
-describe("Testing getters:", function() {
+describe("Testing Item:",function(){
+
   it("should get the right type", function() {
     var t = newItem.getType();
     assert.equal(t, newItem.type);
@@ -36,9 +37,7 @@ describe("Testing getters:", function() {
     var se = newItem.getSeason();
     assert.equal(se, newItem.season);
   });
-});
 
-describe("Testing setters:", function() {
   it("should set a new type", function() {
     const t = "SHOES";
     newItem.setType(t);
@@ -68,7 +67,6 @@ describe("Testing setters:", function() {
     newItem.setSeason(se);
     assert.equal(newItem.season, se);
   });
-})
 
 describe("Testing updateItem", function() {
   it("should update an item", function() {
@@ -97,5 +95,6 @@ describe("Test addReview", function() {
   it("should add a new review", function() {
     newItem.addReview(rev);
     assert.equal(newItem.getReview(), rev);
+    });
   });
 });
