@@ -8,11 +8,9 @@ RUN adduser -S miguel
 #Copiamos los ficheros de dependencias
 COPY package*.json ./
 
-#Instalar dependencias y borrar la caché
-RUN npm install &&  rm -rf /var/lib/apt/lists/*
-
-#Borramos ficheros de dependencias
-RUN rm package*.json
+#Instalar dependencias y borrar la caché y ficheros de dependencies
+RUN npm install &&  rm -rf /var/lib/apt/lists/* && \
+&& rm package*.json
 
 #Cambiamos de usuario
 USER miguel
@@ -23,7 +21,6 @@ ENV PATH=/node_modules/.bin:$PATH
 #Cambiamos de directorio
 VOLUME /test
 WORKDIR /test
-
 
 #Ejecución
 CMD npm run test
