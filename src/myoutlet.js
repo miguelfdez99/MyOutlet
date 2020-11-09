@@ -1,9 +1,10 @@
 var Item = require("./item.js");
-
+var Accessory = require("./accessories.js");
 
 class MyOutlet{
   constructor() {
     this.items = new Array();
+    this.accessories = new Array();
   }
 
   //Method to add a new item to the store
@@ -62,7 +63,28 @@ showItems(){
     return _brand;
     }
 
+  //Method to add a new accessory
+  addAccessory(accessory){
+    var exists = false;
+    this.accessories.forEach(element => {
+      if (accessory.type == element.type && accessory.description == element.description){
+        exists = true;
+        throw new Error("This accessory already exists");
+      }
+    });
+    if (exists == false) {
+      this.accessories.push(accessory);
+    }
+  }
 
+  //Method to delate an item of the store
+  deleteAccesory(accesory) {
+    if(this.accessories.length > 0){
+      this.accessories.pop(accesory);
+    }else{
+      throw new Error("There is not items in the store");
+    }
+  }
 }
 
 module.exports = MyOutlet;
