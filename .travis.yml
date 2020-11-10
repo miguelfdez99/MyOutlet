@@ -3,6 +3,5 @@ services:
   - docker
 before_install:
   - docker pull miguelfdez99/myoutlet
-
 script:
-  - docker run -t -v `pwd`:/test miguelfdez99/myoutlet
+  - docker run -t -v $TRAVIS_BUILD_DIR:/test miguelfdez99/myoutlet
