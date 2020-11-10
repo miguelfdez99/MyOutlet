@@ -1,8 +1,12 @@
-language: minimal
-services:
-  - docker
+language: node_js
+node_js:
+  - "9"
+  - "10"
+  - "11"
+  - "12"
+  - "13"
+  - "14"
+  - "15"
 before_install:
-  - docker pull miguelfdez99/myoutlet
-
-script:
-  - docker run -t -v `pwd`:/test miguelfdez99/myoutlet
+  - npm install
+script: npm test
