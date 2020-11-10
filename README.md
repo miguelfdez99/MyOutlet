@@ -20,6 +20,13 @@ Para lanzar los tests hay que ejecutar:
 $ npm test
 ~~~
 
+## Integración continua
+
+- Integración continua funcionando y correcta [justificación de la misma](https://miguelfdez99.github.io/MyOutlet/ci)
+- Configuración de algún [sistema de integración continua adicional](https://miguelfdez99.github.io/MyOutlet/shippable)
+- [Uso correcto del gestor de tareas en todos los casos anteriores](https://miguelfdez99.github.io/MyOutlet/taskci)
+- [Aprovechamiento de Docker en CI](https://miguelfdez99.github.io/MyOutlet/docker_ci)
+
 ## Docker
 - Para ejecutar los test a partir de los contenedores debemos de ejecutar los siguientes comandos.
   - Desde DockerHub
@@ -52,6 +59,7 @@ $ npm test
   - [H1](https://github.com/miguelfdez99/MyOutlet/milestone/1?closed=1)
   - [H2](https://github.com/miguelfdez99/MyOutlet/milestone/2?closed=1)
   - [H3](https://github.com/miguelfdez99/MyOutlet/milestone/3?closed=1)
+  - [H4](https://github.com/miguelfdez99/MyOutlet/milestone/4?closed=1)
 - [Historias de usuario](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aopen+is%3Aissue+label%3Auser-stories)
 - [Milestones](https://github.com/miguelfdez99/MyOutlet/milestones)
 
