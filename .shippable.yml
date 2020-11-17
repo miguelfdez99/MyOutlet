@@ -1,6 +1,10 @@
 language: node_js
 node_js:
+  - 0.10
+  - 10
   - 11.10.0
+  - node
+
 build:
   cache: true
   cache_dir_list: $SHIPPABLE_BUILD_DIR/node_modules
