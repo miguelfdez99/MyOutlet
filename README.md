@@ -22,10 +22,16 @@ $ npm test
 
 ## Integración continua
 
-- Integración continua funcionando y correcta [justificación de la misma](https://miguelfdez99.github.io/MyOutlet/ci)
-- Configuración de algún [sistema de integración continua adicional](https://miguelfdez99.github.io/MyOutlet/shippable)
+- Integración continua funcionando y correcta [justificación de la misma](https://miguelfdez99.github.io/MyOutlet/ci) : Travis, utilizo Docker para ello.
+- Configuración de algún [sistema de integración continua adicional](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/shippable.md) : Shippable
 - [Uso correcto del gestor de tareas en todos los casos anteriores](https://miguelfdez99.github.io/MyOutlet/taskci)
-- [Aprovechamiento de Docker en CI](https://miguelfdez99.github.io/MyOutlet/docker_ci)
+- [Aprovechamiento de Docker en CI](https://miguelfdez99.github.io/MyOutlet/ci), he utilizado Travis.
+- Avance del proyecto:
+  - He creado la clase [accesorio](https://github.com/miguelfdez99/MyOutlet/blob/master/src/accessories.js)
+  - Se han creado los métodos [añadir y eliminar accesorio](https://github.com/miguelfdez99/MyOutlet/blob/master/src/myoutlet.js)
+  - He testeado todos los métodos de la [clase accesorio](https://github.com/miguelfdez99/MyOutlet/blob/master/test/accessories.test.js)
+  - Se han añadido los test correspondientes a [añadir y elimianr accesorio](https://github.com/miguelfdez99/MyOutlet/blob/master/test/myoutlet.test.js)
+  
 
 ## Docker
 - Para ejecutar los test a partir de los contenedores debemos de ejecutar los siguientes comandos.
