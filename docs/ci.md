@@ -10,20 +10,20 @@ with GitHub and Bitbucket, it is also free source but it has a limited amount of
 more than enough for this project.
 
 The first thing we have to do is signing up in Travis, then we grant permissions
-in order to sync them. We can see it in the 9 of the [TDD exercices](https://github.com/miguelfdez99/Ejercicios-IV/blob/main/docs/ic.md)
+in order to sync them and create a .travis.yml file.
 
-I am going to test it in six version, from version 9 of nodejs to version 15.
-This is the code, to do this I have look into [Travis documentation for nodejs](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/)
+![](img/travis_code.png)
 
-![](img/travis1.png)
+- language: specifies the language I use. Minimal in this case.
+[Minimal](https://docs.travis-ci.com/user/languages/minimal-and-generic/) is optimized to be faster and use less disk space. Also, it contains Docker.
 
+-script: run the build script. $TRAVIS_BUILD_DIR is an environment variable wich indicates the absolute path to the directory where the repository being built has been copied on the worker.
 
-It executes different versions of nodejs, since this versions uses differents versions of npm and nvm in some of them may don't work.
+Previously I have the pull command to my image but it doesn't need it since Travis pull the image if it doesn't find it locally. This is what Travis does:
 
-![](img/travis_prueba.png)
-
-As we can see we have an error in version 9, this is the error:
-
-![](img/travis_error.png)
-
-It doesn't work because the npm is too old, so with older versions than 10 it won't work. I have to remove nodejs "9" and it will work just fine.
+~~~
+$ docker run -t -v $TRAVIS_BUILD_DIR:/test miguelfdez99/myoutlet
+Unable to find image 'miguelfdez99/myoutlet:latest' locally
+latest: Pulling from miguelfdez99/myoutlet
+Status: Downloaded newer image for miguelfdez99/myoutlet:latest
+~~~

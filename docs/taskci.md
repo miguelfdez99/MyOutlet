@@ -5,15 +5,13 @@ But for now I am going to keep using npm.
 
 ### TravisCI
 
-In travis we install the dependencies with **npm install** and we execute the tests with **npm test**. Moreover, we indicate the language that is going to be used and the versions.
+For TravisCI I have used Docker, the container is the one who is going to install all the dependencies and run the tests.
+![](img/travis_code.png)
 
-![](img/travis1.png)
-
-Later we are going to use Docker, it will pull our image and then execute it.
 
 ### Shippable
 
-Is similar to Travis, we indicate language and version. Then we install npm and execute test with npm test. But in Shippable I have included code to avoid install node modules each time, which is:
+We indicate language and versions. Then we install npm and execute test with npm test. In Shippable I have included code to avoid install node modules each time, which is:
 
 ~~~
 cache: true

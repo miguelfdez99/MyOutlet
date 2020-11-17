@@ -5,23 +5,27 @@ There are several continuous integration systems Shippable,Jenkins,CircleCI,Code
 
 You can sign up with GitHub and to use it you simply authorize Shippable to access to GitHub
 
-I only have unit tests so that's why is going to be the same that TravisCI for now. In the next weeks I will use Shippable for **integration testing**, right now I can't do it since it is not inclided yet.
-
 Code for .shippable.yml:
 
 ![](img/shippable_code.png)
 
-In the last part, we install npm and execute the test.
+- language: specifies the language I use. Node.js in this instance.
+- node_js: specify the versions
+  - 0.10: is one of the oldest versions, so it probably won't work.
+  - 10: is not the oldest nor the newest, something in between. It uses the version 10.23.0, which is the more recent variant of the version.
+  - 11.10.0: is the las version that apperars [here](http://docs.shippable.com/platform/runtime/machine-image/language-versions/#nodejs). If version 10 works this version will probably work too.
+  - node: it uses the version 15.2.0. Therefore is the version more likely to run.
 
-~~~
-cache: true
- cache_dir_list:
-   - $SHIPPABLE_BUILD_DIR/node_modules
-~~~
+- This is for avoiding installing node modules each time:
+  ~~~
+  cache: true
+   cache_dir_list:
+     - $SHIPPABLE_BUILD_DIR/node_modules
+  ~~~
 
-This is for avoiding installing node modules each time.
+- build ci: this is executes continuous integration tasks.
+  - npm install ensure the dependencies are installed.
+  - npm test run the tests.
 
-I have this error in older versions:
-![](img/shipp_error.png)
 
-So I am using the last version available 11.10.0.
+![](img/shippable_summary.png)
