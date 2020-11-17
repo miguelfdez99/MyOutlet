@@ -26,7 +26,7 @@ describe("Testing Accessories:", function(){
     var t = "Caps";
     newAccessory.setAccessoryType(t);
     assert.equal(newAccessory.type, t);
-  })
+  });
 
   it("should set a new accesory price", function(){
     var p = 50;
