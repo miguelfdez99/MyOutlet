@@ -61,7 +61,7 @@ describe("Testing showBrand", function(){
     var i = store.showBrand().length;
     var j = store.items.length;
     assert.equal(i,j);
-  })
+  });
 });
 
 describe("Testing addAccessory", function() {
