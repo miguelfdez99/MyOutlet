@@ -36,4 +36,4 @@ class Accessories{
   }
 }
 
-module.exports = Accessories
+module.exports = Accessories;
