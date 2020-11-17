@@ -17,9 +17,9 @@ in order to sync them and create a .travis.yml file.
 - language: specifies the language I use. Minimal in this case.
 [Minimal](https://docs.travis-ci.com/user/languages/minimal-and-generic/) is optimized to be faster and use less disk space. Also, it contains Docker.
 
--script: run the build script. $TRAVIS_BUILD_DIR is an environment variable wich indicates the absolute path to the directory where the repository being built has been copied on the worker.
+- script: run the build script. $TRAVIS_BUILD_DIR is an environment variable wich indicates the absolute path to the directory where the repository being built has been copied on the worker.
 
-Previously I have the pull command to my image but it doesn't need it since Travis pull the image if it doesn't find it locally. This is what Travis does:
+Previously I had the pull command to my image but it doesn't need it since Travis pull the image if it doesn't find it locally. This is what Travis does:
 
 ~~~
 $ docker run -t -v $TRAVIS_BUILD_DIR:/test miguelfdez99/myoutlet
