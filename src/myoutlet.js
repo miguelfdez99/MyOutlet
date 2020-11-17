@@ -83,7 +83,7 @@ showItems(){
       this.accessories.pop(accesory);
     }else{
       throw new Error("There is not items in the store");
-    }
+     }
   }
 }
 
