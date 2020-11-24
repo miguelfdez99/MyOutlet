@@ -4,7 +4,7 @@ async function aBrand(){
   var items = "";
   for(let i in data.data.items){
     if(data.data.items[i].brand == "PUMA"){
-      items += data.data.items[i].type;
+      items += data.data.items[i].type + "\n";
       }
     }
     return items;
