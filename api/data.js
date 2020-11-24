@@ -37,7 +37,7 @@ module.exports.data = {
    "brand":"PUMA",
    "color":"YELLOW",
    "price":100,
-   "season":"SPRING_SUMMER"
+   "season":"FALL_WINTER"
   }
  ]
 };
