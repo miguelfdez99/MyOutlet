@@ -2,22 +2,27 @@ const brand = require('./wBrand')
 
 exports.handler = async function(event, context){
 
-  try{
     var body = JSON.parse(event.body);
-    var {chat, text} = body.message;
+    if(body.message != undefined){
+    var msg = body.message.text;
+    var id_chat = body.message.chat.id;
     var item = "";
-    if(text == "/PUMA"){
+
+    if(msg == "/start"){
+      item = "¡Bienvenido, utilice los comando como ayuda!"
+    }
+    else if(msg == "/puma"){
       item = brand.wBrand("PUMA");
-    }else if(text == "/ADIDAS"){
+    }else if(msg == "/adidas"){
       item = brand.wBrand("ADIDAS");
-    }else if(text == "/KAPPA"){
+    }else if(msg == "/kappa"){
       item = brand.wBrand("KAPPA");
-    }else if(text == "/NIKE") {
+    }else if(msg == "/nike") {
       item = brand.wBrand("NIKE");
-    }else if(text = "/JOMA"){
+    }else if(msg = "/joma"){
       item = brand.wBrand("JOMA")
     }else{
-      item = "Para consultar los artículos de cada marca tiene los siguientes comandos: /PUMA para las prendas de marca Puma, /ADIDAS para las prendas de marca Adidas, /KAPPA para las prendas de marca Kappa, /NIKE para las prendas de marca Nike y /JOMA para las prendas de marca Joma";
+      item = "Para consultar los artículos de cada marca tiene los siguientes comandos: /puma para las prendas de marca Puma, /adidas para las prendas de marca Adidas, /kappa ra las prendas de marca Kappa, /nike para las prendas de marca Nike y /joma para las prendas de marca Joma";
     }
     return {
       statusCode: 200,
@@ -26,5 +31,11 @@ exports.handler = async function(event, context){
         'Content-Type': 'application/json; charset=utf-8'
       }
     };
-  }catch(error){}
+  }else{
+    item = "";
+    return{
+      statusCode: 200.
+      body: item.toString()
+    }
+  }
 }
