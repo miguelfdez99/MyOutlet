@@ -4,7 +4,7 @@ To deploy my repository in Vercel I stuck to the [official documentation](https:
 
 First you have to athorize Vercel to access your GitHub account then you choose which project you want to import
 
-![](/img/vercel.png)
+![](img/vercel.png)
 
 Then we can choose which folders we want to import. It may looks like choosing everything is not the best choice but the functions probably need to access others directories.
 
@@ -24,14 +24,17 @@ Now with every push to my repository Vercel is going to be launch aswell
 
 ## Creating a function
 
-Vercel builds functions within the '/api' directory.To work it must export a default function handler.
+I'm going to implement a function to get every spring-summer item in the shop. [User-Story 6](https://github.com/miguelfdez99/MyOutlet/issues/38)
 
-I'm going to implement a function to see which item is the cheaper one.It is user story 6.
+![](img/vercel1.png)
 
+Vercel builds functions within the '/api' directory.In order to work it must export a default function handler.
+`module.exports = async (req,res)` handle the requests. It tries to send the function Season with status:200 and if it cannot reach the function it gets an error.
 
-![](/img/vercelf.png)
+![](img/vercel2.png)
 
-The function Price gets every price of the data and it save the lower price. It is a very simple function that works fine.
+As we can see it gets the item correctly.
 
+[Vercel url](https://myoutlet.miguelfdez99.vercel.app/api/outlet.js)
 
 Additionally I have created a file with the [data](https://github.com/miguelfdez99/MyOutlet/blob/master/api/data.js)
