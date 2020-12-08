@@ -1,5 +1,5 @@
 {
-  "items": [
+  "items": {
       {
         "type":"HOODIE",
         "size":"M",
@@ -45,6 +45,6 @@
    "color":"BLACK",
    "price": 50,
    "season":"FALL_WINTER"
+    }
   }
- ]
 }

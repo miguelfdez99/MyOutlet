@@ -1,6 +1,6 @@
 const data = require('./data.json');
 
-function wBrand(b){
+function gBrand(b){
     item = "";
     for(i = 1; i <= 6; i++){
       type = "";
@@ -8,7 +8,7 @@ function wBrand(b){
         if (data['items'][i]["brand"] == b){
           if (data['items'][i]["type"].length > 0){
             for( j = 0; j < data['items'][i]["type"].length; j++){
-              type += "\n  Tarea: " +  data['items'][i]["type"][j] +
+              type += "\n  Type: " +  data['items'][i]["type"][j] +
               "\n Size: " + data['items'][i]["size"][j];
             }
           }
@@ -22,4 +22,4 @@ function wBrand(b){
     return item;
   }
 
-  module.exports={wBrand}
+  module.exports={gBrand}

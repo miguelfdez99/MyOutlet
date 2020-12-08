@@ -1,4 +1,4 @@
-const brand = require('./wBrand')
+const brand = require('./getBrand')
 
 exports.handler = async function(event, context){
   try{
@@ -9,19 +9,19 @@ exports.handler = async function(event, context){
     if(text){
       switch(text){
         case "/puma":
-          item = brand.wBrand("PUMA");
+          item = brand.gBrand("PUMA");
           break;
         case "/adidas":
-          item = brand.wBrand("ADIDAS");
+          item = brand.gBrand("ADIDAS");
           break;
         case "/kappa":
-          item = brand.wBrand("KAPPA");
+          item = brand.gBrand("KAPPA");
           break;
         case "/nike":
-          item = brand.wBrand("NIKE");
+          item = brand.gBrand("NIKE");
           break;
         case "/joma":
-          item = brand.wBrand("JOMA");
+          item = brand.gBrand("JOMA");
           break;
         default:
           item = "Para ver los objetos de marca Puma utilice /puma, para Adidas /adidas , para Kappa /kappa. para Nike /nike y para Joma /joma"
