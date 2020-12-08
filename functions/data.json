@@ -1,6 +1,6 @@
 {
   "items": {
-      {
+    "1":{
         "type":"HOODIE",
         "size":"M",
         "brand":"KAPPA",
@@ -8,7 +8,7 @@
         "price": 40,
         "season":"FALL_WINTER"
      },
-      {
+    "2":{
      "type":"T-SHIRT",
      "size":"S",
      "brand":"PUMA",
@@ -16,7 +16,7 @@
      "price": 13,
      "season":"SPRING_SUMMER"
      },
-      {
+      "3":{
       "type":"JOGGERS",
       "size":"L",
       "brand":"ADIDAS",
@@ -24,21 +24,23 @@
       "price":35,
       "season":"FALL_WINTER"
     },
-      {
+      "4":{
      "type":"JACKET",
      "size":"XL",
      "brand":"NIKE",
      "color":"RED",
      "price":70,
      "season":"FALL_WINTER"
-   },{
+   },
+   "5":{
    "type":"SHIRTS",
    "size":"M",
    "brand":"JOMA",
    "color":"YELLOW",
    "price":100,
    "season":"FALL_WINTER"
- },{
+ },
+ "6":{
    "type":"HOODIE",
    "size":"S",
    "brand":"ADIDAS",
