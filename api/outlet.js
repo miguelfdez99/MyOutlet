@@ -4,7 +4,7 @@ async function Season(){
   var item = "";
   for(let i in data.data.items){
     if(data.data.items[i].season == "SPRING_SUMMER"){
-      item += data.data.items[i];
+      item = data.data.items[i];
       }
     }
     return item;
