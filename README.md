@@ -20,6 +20,13 @@ Para lanzar los tests hay que ejecutar:
 $ npm test
 ~~~
 
+## Serverless
+
+- Despliegue correcto y funcionando de Vercel.[Documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/vercel.md)
+- Uso de otra plataforma, Netlify y creación de un bot de telegram.[Documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/telegrambot.md)
+- Se han trado las historias de usuario [HU:01](https://github.com/miguelfdez99/MyOutlet/issues/2), [HU:06](https://github.com/miguelfdez99/MyOutlet/issues/38) y
+[HU:07](https://github.com/miguelfdez99/MyOutlet/issues/43)
+
 ## Integración continua
 
 - Integración continua funcionando y correcta [justificación de la misma](https://miguelfdez99.github.io/MyOutlet/ci) : Travis, utilizo Docker para ello.
