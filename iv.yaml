@@ -4,3 +4,4 @@ test:
   - test/item.test.js
   - test/myoutlet.test.js
 taskfile: package.json
+URL: https://myoutlet.miguelfdez99.vercel.app/api/outlet.js
