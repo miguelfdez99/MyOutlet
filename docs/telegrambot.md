@@ -35,7 +35,7 @@ When the webhook is called , we get the information with:
 
 ## Bot
 
-[Telegram link](t.me/ivmyoutlet_bot)
+[Telegram link](https://t.me/ivmyoutlet_bot)
 
 ![](img/bot1.png)
 
