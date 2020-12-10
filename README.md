@@ -24,7 +24,7 @@ $ npm test
 
 - Despliegue correcto y funcionando de Vercel.[Documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/vercel.md)
 - Uso de otra plataforma, Netlify y creación de un bot de telegram.[Documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/telegrambot.md)
-- Se han trado las historias de usuario [HU:01](https://github.com/miguelfdez99/MyOutlet/issues/2), [HU:06](https://github.com/miguelfdez99/MyOutlet/issues/38) y
+- Se han tratado las historias de usuario [HU:01](https://github.com/miguelfdez99/MyOutlet/issues/2), [HU:06](https://github.com/miguelfdez99/MyOutlet/issues/38) y
 [HU:07](https://github.com/miguelfdez99/MyOutlet/issues/43)
 
 ## Integración continua
@@ -73,6 +73,8 @@ $ npm test
   - [H2](https://github.com/miguelfdez99/MyOutlet/milestone/2?closed=1)
   - [H3](https://github.com/miguelfdez99/MyOutlet/milestone/3?closed=1)
   - [H4](https://github.com/miguelfdez99/MyOutlet/milestone/4?closed=1)
+  - [H5](https://github.com/miguelfdez99/MyOutlet/milestone/5?closed=1)
+  
 - [Historias de usuario](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aopen+is%3Aissue+label%3Auser-stories)
 - [Milestones](https://github.com/miguelfdez99/MyOutlet/milestones)
 
