@@ -1,6 +1,7 @@
 test:
-				npm test
+	npm test
 
 build:
 
 install:
+
