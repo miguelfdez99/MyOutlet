@@ -36,20 +36,47 @@ class MyOutlet{
     }
   }
 
+  //Method to update one item of the store
+  updatedItem(type,size,brand,color,price,season){
+    var exists = false;
+    for(var i in this.items){
+      if (this.items[i].getType()){
+        exists = true;
+      }
+    }
+    if (exists == true) {
+      this.items[i].type = type;
+      this.items[i].size = size;
+      this.items[i].brand = brand;
+      this.items[i].color = color;
+      this.items[i].price = price;
+      this.items[i].season = season;
+      return this.items[i];
+    }
+    else{
+      throw new Error("Error updating the item");
+    }
+  }
+
 //Method to show every item
 showItems(){
+  if(this.items.length > 0){
     var _items = new Array();
     for(var i in this.items){
-      _items.push(this.items[i].checkItem() + "\n");
+      _items.push(this.items[i].checkItem());
     }
     return _items;
+  }else{
+    throw new Error("There are no items")
+  }
+
   }
 
   //Method to show every type existing in the store
   showType(){
     var _type = new Array();
     for(var i in this.items){
-      _type.push(this.items[i].getType() + "\n");
+      _type.push(this.items[i].getType());
     }
     return _type;
   }
@@ -58,7 +85,7 @@ showItems(){
   showBrand(){
     var _brand = new Array();
     for(var i in this.items){
-      _brand.push(this.items[i].getBrand() + "\n");
+      _brand.push(this.items[i].getBrand());
     }
     return _brand;
     }
@@ -82,9 +109,10 @@ showItems(){
     if(this.accessories.length > 0){
       this.accessories.pop(accesory);
     }else{
-      throw new Error("There is not items in the store");
+      throw new Error("There are no items in the store");
      }
   }
+
 }
 
 module.exports = MyOutlet;
