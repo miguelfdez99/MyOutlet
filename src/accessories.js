@@ -34,6 +34,15 @@ class Accessories{
   setAccessoryDescription(nDescription){
     this.description = nDescription;
   }
+
+  checkAccessories() {
+    var description = (
+      "Type: " + this.type + ", " +
+      "Price: " + this.price + ", " +
+      "Description: " + this.description);
+
+      return description;
+    }
 }
 
 module.exports = Accessories;

@@ -144,6 +144,14 @@ class MyOutlet {
     }
   }
 
+  //
+  showAccessories() {
+    var _accessories = new Array();
+    for (var i in this.accessories) {
+      _accessories.push(this.accessories[i].checkAccessories());
+    }
+    return _accessories;
+  }
 
 }
 
