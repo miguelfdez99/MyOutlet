@@ -44,7 +44,7 @@ describe('PUT /item', () => {
 
 //HU:07 ---> Como usuario quiero consultar el tipo de prenda que hay de una determinada marca
 describe('GET /item/:brand', () => {
-  it('should get every accessory', (done) => {
+  it('should get all the information about items of certain brand', (done) => {
     request(app)
       .get('/item/NIKE')
       .expect('Content-Type', /json/)
