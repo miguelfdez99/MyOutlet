@@ -113,6 +113,22 @@ showItems(){
      }
   }
 
+
+  //Method to show information about certain brand
+  brandInfo(b) {
+      let brand = ""
+      for(var i in this.items){
+        if (this.items[i].getBrand() ==  b){
+          brand += "Type:" + this.items[i].getType() + ", " +
+          "Size: " + this.items[i].getSize() + ", " +
+          "Color: " + this.items[i].getColor() + ", " +
+          "Price: " + this.items[i].getPrice() + ", " +
+          "Season: " + this.items[i].getSeason() + " ";
+    }
+  }
+  return brand;
+  }
+
 }
 
 module.exports = MyOutlet;
