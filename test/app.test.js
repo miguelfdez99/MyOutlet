@@ -1,6 +1,16 @@
 const request = require('supertest');
 const app = require('../src/app.js')
 
+var server;
+before(function(){
+  server = app.listen(8080)
+})
+
+after(function(done){
+  server.close(done)
+})
+
+
 describe('GET /', () => {
   it('should get OK status', (done) => {
     request(app)
