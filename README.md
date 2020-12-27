@@ -20,6 +20,12 @@ Para lanzar los tests hay que ejecutar:
 $ npm test
 ~~~
 
+## Microservicios
+
+- [Justificación del framework elegido](https://miguelfdez99.github.io/MyOutlet/framework)
+- Diseño de la  [API](https://github.com/miguelfdez99/MyOutlet/blob/master/src/app.js) y su [documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/api.md)
+- [Tests de integración](https://miguelfdez99.github.io/MyOutlet/apitest)
+
 ## Serverless
 
 - Despliegue correcto y funcionando de Vercel.[Documentación](https://github.com/miguelfdez99/MyOutlet/blob/master/docs/vercel.md)
@@ -74,6 +80,7 @@ $ npm test
   - [H3](https://github.com/miguelfdez99/MyOutlet/milestone/3?closed=1)
   - [H4](https://github.com/miguelfdez99/MyOutlet/milestone/4?closed=1)
   - [H5](https://github.com/miguelfdez99/MyOutlet/milestone/5?closed=1)
+  - [H6](https://github.com/miguelfdez99/MyOutlet/milestone/6?closed=1)
   
 - [Historias de usuario](https://github.com/miguelfdez99/MyOutlet/issues?q=is%3Aopen+is%3Aissue+label%3Auser-stories)
 - [Milestones](https://github.com/miguelfdez99/MyOutlet/milestones)
