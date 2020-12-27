@@ -25,6 +25,7 @@ describe('GET /item', () => {
   it('should get every item', (done) => {
     request(app)
       .get('/item')
+      .expect('Content-Type', /json/)
       .expect(200, done);
   })
 })
