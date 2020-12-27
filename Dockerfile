@@ -10,7 +10,7 @@ COPY package*.json ./
 
 #Instalar dependencias y borrar la caché y ficheros de dependencies
 RUN npm install &&  rm -rf /var/lib/apt/lists/*  \
-&& rm package*.json
+&& rm package*.json && apk add --update nodejs npm make 
 
 #Cambiamos de usuario
 USER miguel
@@ -23,4 +23,4 @@ VOLUME /test
 WORKDIR /test
 
 #Ejecución
-CMD npm run test
+CMD ["npm", "test"]
