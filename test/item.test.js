@@ -79,13 +79,12 @@ describe("Testing updateItem", function() {
 
 describe("Testing checkItem", function() {
   it("should give information about an item", function() {
-    var des = ("Information about the item" +
-      "\n Type: " + "HOODIE" +
-      "\n Size: " + "M" +
-      "\n Brand: " + "KAPPA" +
-      "\n Color: " + "BLACK" +
-      "\n Price: " + "25" +
-      "\n Season: " + "FALL_WINTER");
+    var des = ("Type: " + "HOODIE"  + ", " +
+    "Size: " + "M" + ", " +
+    "Brand: " + "KAPPA" + ", " +
+    "Color: " + "BLACK" + ", " +
+    "Price: " + 25 + ", " +
+    "Season: " + "FALL_WINTER" );
     var d = newItem1.checkItem();
     assert.equal(d, des);
   });

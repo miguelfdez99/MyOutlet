@@ -123,17 +123,16 @@ class Item {
   //Method to check the information about an item
 
   checkItem() {
-    var description = ("Information about the item" +
-      "\n Type: " + this.type +
-      "\n Size: " + this.size +
-      "\n Brand: " + this.brand +
-      "\n Color: " + this.color +
-      "\n Price: " + this.price +
-      "\n Season: " + this.season);
+    var description = (
+      "Type: " + this.type + ", " +
+      "Size: " + this.size + ", " +
+      "Brand: " + this.brand + ", " +
+      "Color: " + this.color + ", " +
+      "Price: " + this.price + ", " +
+      "Season: " + this.season);
 
       return description;
     }
-
 }
 
 
