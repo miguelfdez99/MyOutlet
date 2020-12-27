@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 
-//const port = process.env.port || 8080
+const port = process.env.port || 8080
 
 const MyOutlet = require('./myoutlet.js');
 const Item = require('./item.js');
@@ -14,6 +14,9 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+
+//Middleware
+app.use(morgan('dev'))
 
 app.get('/', function (req, res) {
     res.status(200).json('API is running');
@@ -121,7 +124,7 @@ app.route('/accessory')
   })
 
 
-//app.listen(port);
-//console.log('Server running at localhost:'+port+'/');
+app.listen(port);
+console.log('Server running at localhost:'+port+'/');
 
 module.exports = app
