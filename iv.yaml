@@ -1,8 +1,8 @@
 entidad: src/myoutlet.js
 lenguaje: JavaScript
 test:
-  - test/item.test.js
-  - test/myoutlet.test.js
+  - tests/item.test.js
+  - tests/myoutlet.test.js
 taskfile: package.json
 URL: https://myoutlet.miguelfdez99.vercel.app/api/outlet.js
 make: make
