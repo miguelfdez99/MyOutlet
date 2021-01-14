@@ -38,5 +38,4 @@ app.route('/item/:type')
   .delete(item.deleteItem)
   .put(item.updateItem)
 
-
 module.exports = app;
