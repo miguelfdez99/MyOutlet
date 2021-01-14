@@ -24,7 +24,6 @@ app.get('/', function(req,res){
 app.get('/status', function(req,res){
   res.status(200).json({status:"OK"});
 })
-
 //Items
 
 app.route('/item')
