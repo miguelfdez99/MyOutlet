@@ -31,10 +31,19 @@ app.route('/item')
   .put(item.addItem)
 
 app.route('/item/:brand')
-  .get(item.getItemByBrand);
+  .get(item.getItemByBrand)
+
+app.route('/item/season/:season')
+  .get(item.getItemBySeason)
+
+app.route('/item/color/:color')
+  .get(item.getItemByColor)
 
 app.route('/item/:type')
   .delete(item.deleteItem)
   .put(item.updateItem)
+
+app.route('/accessory')
+  .get(item.getAccessories)
 
 module.exports = app;

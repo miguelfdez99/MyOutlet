@@ -1,4 +1,5 @@
 let Item = require('./models/itemSchema')
+let Accessory = require('./models/accessorySchema')
 
 // Get every single item. HU01
 function getItems(req,res){
@@ -16,6 +17,28 @@ async function getItemByBrand(req,res){
     let brand = req.params.brand
     try{
       const items = await Item.find({brand: brand})
+      res.json(items)
+    }catch(err){
+      res.status(500).json({message: err.message })
+    }
+  }
+
+//HU06
+async function getItemBySeason(req,res){
+  let season = req.params.season
+  let item = Item.find({season: season}).exec(function(err,item){
+    if(!err){
+      res.status(200).json(item)
+    }else{
+      res.status(500).send(err)
+    }
+  })
+}
+
+async function getItemByColor(req,res){
+    let color = req.params.color
+    try{
+      const items = await Item.find({color: color})
       res.json(items)
     }catch(err){
       res.status(500).json({message: err.message })
@@ -70,6 +93,20 @@ async function updateItem(req,res){
   })
 }
 
+//Accessory
+
+//HU05
+function getAccessories(req,res){
+  let accessory = Accessory.find({}).exec(function(err,accessory){
+    if(!err){
+      res.status(200).json(accessory)
+    }else{
+      res.send(err)
+    }
+  })
+}
 
 
-module.exports = {getItems,getItemByBrand,addItem,deleteItem,updateItem}
+
+
+module.exports = {getItems,getItemByBrand,addItem,deleteItem,updateItem, getItemBySeason, getItemByColor,getAccessories}
