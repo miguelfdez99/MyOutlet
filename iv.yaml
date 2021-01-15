@@ -6,3 +6,16 @@ test:
 taskfile: package.json
 URL: https://myoutlet.miguelfdez99.vercel.app/api/outlet.js
 make: make
+PaaS: https://myoutlet.herokuapp.com/
+recurso:
+  nombre: item
+  metodo: PUT
+  payload:
+    type: "T-SHIRT"
+    size: "S"
+    brand: "NIKE"
+    color: "RED"
+    price: 18
+    season: "SPRING_SUMMER"
+  IDs:
+    - NIKE
