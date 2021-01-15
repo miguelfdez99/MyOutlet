@@ -10,7 +10,7 @@ describe('GET /status', () => {
   })
 })
 
-//HU:01 ---> Mostrar información de una prenda
+//HU01 ---> Mostrar información de una prenda
 describe('GET /item', () => {
   it('should get every item', (done) => {
     request(app)
@@ -21,18 +21,20 @@ describe('GET /item', () => {
 })
 
 
-//HU:02 ---> Añadir una prenda nueva
+//HU02 ---> Añadir una prenda nueva
 describe('PUT /item', () => {
   it('should add a new item', (done) => {
     request(app)
       .put('/item')
       .send(item)
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
       .expect(201,done());
   })
 })
 
 
-//HU:04 ---> Modificar una prenda
+//HU04 ---> Modificar una prenda
 describe('PUT /item/:type', () => {
   it('should update an item', (done) => {
     request(app)
@@ -43,17 +45,36 @@ describe('PUT /item/:type', () => {
   })
 })
 
-//HU:07 ---> Como usuario quiero consultar el tipo de prenda que hay de una determinada marca
+//HU07 ---> Como usuario quiero consultar el tipo de prenda que hay de una determinada marca
 describe('GET /item/:brand', () => {
-  it('should get all the information about items of certain brand', (done) => {
+  it('should get all the information about certain brand', (done) => {
     request(app)
       .get('/item/NIKE')
-      .expect('Content-Type', /json/)
+      .expect('Content-Type', 'application/json')
       .expect(200, done());
   })
 })
 
-//HU:03 ---> Eliminar una prenda
+//HU06 --> Como usuario quiero consultar el tipo de prenda disponible de una temporada en concreto
+describe('GET /item/season/:season', () => {
+  it('should get all the information about certain season', (done) => {
+    request(app)
+      .get('/item/season/SPRING_SUMMER')
+      .expect('Content-Type', 'application/json')
+      .expect(200, done());
+  })
+})
+
+describe('GET /item/color/:color', () => {
+  it('should get all the information about certain color', (done) => {
+    request(app)
+      .get('/item/color/RED')
+      .expect('Content-Type', 'application/json')
+      .expect(200, done());
+  })
+})
+
+//HU03 ---> Eliminar una prenda
 describe('DELETE /item/:type', () => {
   it('should delete an item', (done) => {
     request(app)
@@ -62,6 +83,18 @@ describe('DELETE /item/:type', () => {
       .expect(200,done())
   })
 })
+
+
+//HU05 ---> Consultar un accesorio
+describe('GET /accessory', () => {
+  it('should get all the accessories', (done) => {
+    request(app)
+    .get('/accessory')
+    .expect('Content-Type', /json/)
+    .expect(200, done());
+  })
+})
+
 
 let item = {
   "type": "JACKET",
