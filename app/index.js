@@ -18,7 +18,7 @@ app.use(bodyParser.json({ type: 'application/json'}));
 mongoose.connect(`${process.env.MONGO_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.get('/', function(req,res){
-  res.send("Running!!")
+  res.status(200).json({status:"OK"});
 });
 
 app.get('/status', function(req,res){
