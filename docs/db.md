@@ -5,7 +5,10 @@ I've previously work with MongoDB and I am more comfortable using it than using 
 MongoDB Atlas has a free plan where you can have 512MB of memory.
 It is easy to connect it with the application or the mongo shell.
 I've used mongoose which is a tool for object modeling and for working asynchronously.
-With mongoose it is really easy to connect our application with MongoDB Atlas: `mongoose.connect(`${process.env.MONGO_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });`
+With mongoose it is really easy to connect our application with MongoDB Atlas:
+
+ `mongoose.connect(${process.env.MONGO_URI}, { useNewUrlParser: true, useUnifiedTopology: true });`
+
 In order to make it work in Heroku I had to set the environment variable there aswell.
 
 
@@ -13,7 +16,7 @@ In order to make it work in Heroku I had to set the environment variable there a
 
 Heroku provides logs for the application `heroku logs` or `heroku logs --tail`
 
-![](./img/logs)
+![](./img/logs.png)
 
 # Load Balance
 
@@ -25,7 +28,7 @@ app.get('/loaderio-09aa6ee6b866095a506985cc2a61163d', function(req,res){
 })
 
 ```
-When this is donde it allows you to run tests.
+When this is done it allows you to run tests.
 
 ![](./img/loaderio.png)
 

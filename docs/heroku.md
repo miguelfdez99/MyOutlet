@@ -26,4 +26,4 @@ You can enable automatic deploys from GitHub, it has the option to only deploy i
 
 I also has a deployment from CloudBees Codeship, where you can add a deplyment to a pipeline with just choosing Heroku and providing Heroku API Key. I installed it for the PaaS exercises, I don't think I need it since I have the other configuration aswell, but I guess it's not bad to have it in case my Travis credits runs out.
 
-![](./ghdeploy.png)
+![](./img/ghdeploy.png)
