@@ -4,8 +4,7 @@
   "description": "Outlet de una tienda deportiva",
   "main": "src/myoutlet.js",
   "scripts": {
-    "test": "mocha tests --exit",
-    "start": "node ./app/index.js"
+    "test": "mocha tests --exit"
   },
   "repository": {
     "type": "git",
