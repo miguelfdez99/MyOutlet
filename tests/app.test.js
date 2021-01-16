@@ -22,7 +22,7 @@ describe('GET /item', () => {
 
 
 //HU02 ---> Añadir una prenda nueva
-describe('PUT /item', () => {
+describe('PUT /item/:type', () => {
   it('should add a new item', (done) => {
     request(app)
       .put('/item')
@@ -35,7 +35,7 @@ describe('PUT /item', () => {
 
 
 //HU04 ---> Modificar una prenda
-describe('PUT /item/:type', () => {
+describe('PUT /item/type/:type', () => {
   it('should update an item', (done) => {
     request(app)
       .put('/item/JACKET')
@@ -46,7 +46,7 @@ describe('PUT /item/:type', () => {
 })
 
 //HU07 ---> Como usuario quiero consultar el tipo de prenda que hay de una determinada marca
-describe('GET /item/:brand', () => {
+describe('GET /item/brand/:brand', () => {
   it('should get all the information about certain brand', (done) => {
     request(app)
       .get('/item/NIKE')
@@ -74,6 +74,14 @@ describe('GET /item/color/:color', () => {
   })
 })
 
+describe('GET /item/type/:type', () => {
+  it('should get all the information about certain type of item', (done) => {
+    request(app)
+      .get('/item/type/JACKET')
+      .expect('Content-Type', 'application/json')
+      .expect(200, done());
+  })
+})
 //HU03 ---> Eliminar una prenda
 describe('DELETE /item/:type', () => {
   it('should delete an item', (done) => {
