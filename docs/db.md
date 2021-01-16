@@ -1,8 +1,8 @@
 # Database
 
 MongoDB is the best choice for a simple application like this one, also Mongo uses documents in JSON format.
-I've previously work with MongoDB and I am more comfortable using it than using a MySQL dstabase.
-MongoDB Atlas has a free plan where you can have 512MB of memory.
+I've previously work with MongoDB and I am more comfortable using it than using a MySQL database.
+MongoDB Atlas has a free plan where you can store 512MB of memory.
 It is easy to connect it with the application or the mongo shell.
 I've used mongoose which is a tool for object modeling and for working asynchronously.
 With mongoose it is really easy to connect our application with MongoDB Atlas:
@@ -39,4 +39,4 @@ When this is done it allows you to run tests.
 
 ![](./img/lt3.png)
 
-The tests are for 300 clients over 30 seconds, we can see that the results are not bad considering that the MongoDB cluster it's on Virginia. The more data it has to get the more time it takes so makes sense.
+The tests are for 300 clients over 30 seconds, we can see that the results are not bad considering that the MongoDB cluster it's on Virginia. The more data it has to get the more time it takes, so makes sense.

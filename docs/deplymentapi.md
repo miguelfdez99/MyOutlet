@@ -5,19 +5,24 @@ This is the Heroku application: [https://myoutlet.herokuapp.com/](https://myoutl
 API Routes:
 
 - HU01: show information about items
-- HU02: add a new item
 ```
 app.route('/item')
   .get(item.getItems)
-  .put(item.addItem)
 ```
+- HU02: add a new item
 - HU03: delete an item
-- HU04: modify an item
 ```
 app.route('/item/:type')
+  .get(item.getItemByType)
+  .put(item.addItem)
   .delete(item.deleteItem)
+```
+- HU04: modify an item
+```
+app.route('/item/type/:type')
   .put(item.updateItem)
 ```
+
 - HU05: show information about accessories.
 ```
 app.route('/accessory')
