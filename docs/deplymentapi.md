@@ -35,7 +35,7 @@ app.route('/item/season/:season')
 ```
 - HU07: as a user I want to be able to see the items available of a brand.
 ```
-app.route('/item/:brand')
+app.route('/item/brand/:brand')
   .get(item.getItemByBrand)
 
 ```
