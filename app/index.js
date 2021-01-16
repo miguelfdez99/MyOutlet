@@ -35,13 +35,14 @@ app.route('/item')
   .get(item.getItems)
 
 app.route('/item/:type')
+  .get(item.getItemByType)
   .put(item.addItem)
   .delete(item.deleteItem)
 
 app.route('/item/type/:type')
   .put(item.updateItem)
 
-app.route('/item/:brand')
+app.route('/item/brand/:brand')
   .get(item.getItemByBrand)
 
 app.route('/item/season/:season')

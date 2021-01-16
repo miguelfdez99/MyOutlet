@@ -45,6 +45,16 @@ async function getItemByColor(req,res){
     }
   }
 
+async function getItemByType(req,res){
+    let type = req.params.type
+    try{
+      const items = await Item.find({type: type})
+      res.json(items)
+    }catch(err){
+      res.status(500).json({message: err.message })
+    }
+  }
+
 //Delete an item. HU03
 function deleteItem(req,res){
   let type = req.params.type;
@@ -109,4 +119,4 @@ function getAccessories(req,res){
 
 
 
-module.exports = {getItems,getItemByBrand,addItem,deleteItem,updateItem, getItemBySeason, getItemByColor,getAccessories}
+module.exports = {getItems,getItemByBrand,addItem,deleteItem,updateItem, getItemBySeason, getItemByColor,getAccessories, getItemByType}
