@@ -60,7 +60,7 @@ function deleteItem(req,res){
 //Creates a new Item HU02
 async function addItem(req,res){
   const item = new Item({
-    type: req.body.type,
+    type: req.params.type,
     size: req.body.size,
     brand: req.body.brand,
     color: req.body.color,
@@ -77,14 +77,14 @@ async function addItem(req,res){
 
 //HU04
 async function updateItem(req,res){
-  let type = req.params.type;
+  let newType = req.body.type;
   let newSize = req.body.size;
-  let newBrand = req.body.brand;
+  let brand = req.params.brand;
   let newColor = req.body.color;
   let newPrice = req.body.price;
   let newSeason = req.body.season;
 
-  let item = Item.updateOne({type: type}, {$set: {size: newSize, brand: newBrand, color: newColor, price: newPrice, season: newSeason}}).exec(function(err,type){
+  let item = Item.updateOne({brand: brand}, {$set: {type: newType, size: newSize,color: newColor, price: newPrice, season: newSeason}}).exec(function(err,type){
     if(!err){
       res.status(200).json({message: "Updated!"})
     }else{

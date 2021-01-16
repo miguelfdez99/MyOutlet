@@ -33,7 +33,13 @@ app.get('/status', function(req,res){
 
 app.route('/item')
   .get(item.getItems)
+
+app.route('/item/:type')
   .put(item.addItem)
+  .delete(item.deleteItem)
+
+app.route('/item/type/:type')
+  .put(item.updateItem)
 
 app.route('/item/:brand')
   .get(item.getItemByBrand)
@@ -44,9 +50,6 @@ app.route('/item/season/:season')
 app.route('/item/color/:color')
   .get(item.getItemByColor)
 
-app.route('/item/:type')
-  .delete(item.deleteItem)
-  .put(item.updateItem)
 
 app.route('/accessory')
   .get(item.getAccessories)
