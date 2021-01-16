@@ -17,6 +17,11 @@ app.use(bodyParser.json({ type: 'application/json'}));
 
 mongoose.connect(`${process.env.MONGO_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
+app.get('/loaderio-09aa6ee6b866095a506985cc2a61163d', function(req,res){
+  res.send('loaderio-09aa6ee6b866095a506985cc2a61163d');
+})
+
+
 app.get('/', function(req,res){
   res.status(200).json({status:"OK"});
 });
