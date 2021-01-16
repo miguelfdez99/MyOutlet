@@ -11,6 +11,7 @@ With mongoose it is really easy to connect our application with MongoDB Atlas:
 
 In order to make it work in Heroku I had to set the environment variable there aswell.
 
+![](./img/mongo.png)
 
 # Logs
 
