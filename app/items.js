@@ -79,6 +79,7 @@ async function addItem(req,res){
   })
   try{
     const newItem = await item.save()
+    res.set('Location',`/item/${newItem.type}`)
     res.status(201).json(newItem)
   }catch(err){
     res.status(400)
